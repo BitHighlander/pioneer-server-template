@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "scripts": {
     "refresh": "rm -Rf node_modules dist api && yarn",
-    "yarn": "yarn",
+    "pnpm": "pnpm i",
     "build:web": "echo lol",
     "build:routes": "mkdir -p src/routes && tsoa routes --configuration tsoa.json",
     "build:swagger": "mkdir -p api && mkdir -p api/dist && tsoa swagger --configuration tsoa.json",
