@@ -14,10 +14,10 @@
     "build:routes:prod": "mkdir -p src/routes && tsoa routes --configuration tsoaProd.json",
     "build:swagger:prod": "mkdir -p api && mkdir -p api/dist && tsoa swagger --configuration tsoaProd.json",
     "build:all:prod": "npm run build:routes:prod && npm run build:swagger:prod && npm run build:ts && npm run build:web",
-    "docker:build": "docker build -t pioneer/pioneer-server-v2:latest .",
-    "docker:tag": "docker tag pioneer/pioneer-server-v2:latest registry.digitalocean.com/pioneer/pioneer/pioneer-server-v2:latest",
-    "docker:run": "docker run --env-file=../../.env pioneer/pioneer-server-v2:latest",
-    "docker:push": "docker push registry.digitalocean.com/pioneer/pioneer/pioneer-server-v2:latest",
+    "docker:build": "docker build -t pioneer/pioneer-server-template:latest .",
+    "docker:tag": "docker tag pioneer/pioneer-server-template:latest registry.digitalocean.com/pioneer/pioneer/pioneer-server-template:latest",
+    "docker:run": "docker run --env-file=../../.env pioneer/pioneer-server-template:latest",
+    "docker:push": "docker push registry.digitalocean.com/pioneer/pioneer/pioneer-server-template:latest",
     "docker:push:all": "npm run docker:build && npm run docker:tag && npm run docker:push"
   },
   "dependencies": {
